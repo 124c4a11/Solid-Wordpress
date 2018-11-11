@@ -178,9 +178,13 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/solid-navwalker.php';
 
 /**
+ * TGM class.
+ */
+require get_template_directory() . '/inc/init-tgm.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
   require get_template_directory() . '/inc/jetpack.php';
 }
-
