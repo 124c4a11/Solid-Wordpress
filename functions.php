@@ -183,6 +183,11 @@ require get_template_directory() . '/inc/solid-navwalker.php';
 require get_template_directory() . '/inc/init-tgm.php';
 
 /**
+ * Theme options (Redux).
+ */
+require get_template_directory() . '/inc/solid-options.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
