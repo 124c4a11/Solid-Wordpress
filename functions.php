@@ -7,6 +7,7 @@
  * @package Solid
  */
 
+
 if ( ! function_exists( 'solid_setup' ) ) :
   /**
    * Sets up theme defaults and registers support for various WordPress features.
@@ -83,6 +84,7 @@ if ( ! function_exists( 'solid_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'solid_setup' );
 
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -97,6 +99,7 @@ function solid_content_width() {
   $GLOBALS['content_width'] = apply_filters( 'solid_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'solid_content_width', 0 );
+
 
 /**
  * Register widget area.
@@ -126,6 +129,24 @@ function solid_widgets_init() {
 }
 add_action( 'widgets_init', 'solid_widgets_init' );
 
+
+/**
+ * Init qoob libs
+ */
+add_filter( 'qoob_libs', 'solid_add_theme_lib', 10, 2 );
+if ( ! function_exists( 'solid_add_theme_lib' ) ) {
+  /**
+   * Adding lib in qoob libs
+   *
+   * @param array $qoob_libs Array with url to qoob lib.
+   */
+  function solid_add_theme_lib( $qoob_libs ) {
+    array_push( $qoob_libs, get_template_directory() . '/blocks/lib.json' );
+    return $qoob_libs;
+  }
+}
+
+
 /**
  * Enqueue scripts and styles.
  */
@@ -151,6 +172,7 @@ function solid_scripts() {
   }
 }
 add_action( 'wp_enqueue_scripts', 'solid_scripts' );
+
 
 /**
  * Implement the Custom Header feature.

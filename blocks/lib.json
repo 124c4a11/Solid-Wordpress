@@ -1,0 +1,12 @@
+{
+  "name": "Solid",
+  "groups": [{
+    "id": "main",
+    "label": "Main Blocks",
+    "position": 0
+  }],
+  "blocks": [{
+    "name": "hero",
+    "url": "/hero"
+  }]
+}

@@ -233,7 +233,7 @@
                 'msg'      => 'custom error message',
                 'default'  => 'test@test.com'
             ),
-        );
+        ),
     ) );
 
 
