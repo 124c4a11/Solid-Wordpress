@@ -4,9 +4,16 @@
     "id": "main",
     "label": "Main Blocks",
     "position": 0
+  },{
+    "id": "iconbox",
+    "label": "Iconbox",
+    "position": 1
   }],
   "blocks": [{
     "name": "hero",
     "url": "/hero"
+  },{
+    "name": "iconbox",
+    "url": "/iconbox"
   }]
 }

@@ -1,0 +1,59 @@
+{
+  "groups": "iconbox",
+  "template": "template.hbs",
+  "settings": [{
+      "name": "block_id",
+      "label": "Block's id",
+      "type": "text"
+    },{
+      "name": "boxes",
+      "label": "Items",
+      "type": "accordion",
+      "settings": [{
+        "name": "icon",
+        "label": "Icon",
+        "type": "icon"
+      },{
+        "name": "title",
+        "label": "Title",
+        "type": "text"
+      },{
+        "name": "text",
+        "label": "Text",
+        "type": "textarea"
+      },{
+        "name": "btn_text",
+        "label": "Button text",
+        "type": "text"
+      },{
+        "name": "btn_link",
+        "label": "Button link",
+        "type": "text"
+      }]
+    }],
+  "defaults": {
+    "block_id": "service",
+    "boxes": [{
+      "icon": "fa fa-heart-o",
+      "title": "Handsomely Crafted",
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
+      "btn_text": "More Info",
+      "btn_link": "#",
+      "order": 1
+    },{
+      "icon": "fa fa-flask",
+      "title": "Retina Ready",
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
+      "btn_text": "More Info",
+      "btn_link": "#",
+      "order": 2
+    },{
+      "icon": "fa fa-trophy",
+      "title": "Quality Theme",
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
+      "btn_text": "More Info",
+      "btn_link": "#",
+      "order": 3
+    }]
+  }
+}

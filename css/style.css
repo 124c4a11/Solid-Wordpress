@@ -138,6 +138,9 @@ a:focus {
   border-color: #384452;
   margin: 4px;
 }
+.btn-theme:visited {
+	color: #fff;
+}
 .btn-theme:hover,
 .btn-theme:focus,
 .btn-theme:active,
