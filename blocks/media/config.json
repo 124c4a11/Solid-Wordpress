@@ -4,5 +4,55 @@
     "src": "%block_url%/assets/img/portfolio_01.jpg",
     "tags": ["portfolio"],
     "pack": "solid"
+  },{
+    "type": "image",
+    "src": "%block_url%/assets/img/portfolio_02.jpg",
+    "tags": ["portfolio"],
+    "pack": "solid"
+  },{
+    "type": "image",
+    "src": "%block_url%/assets/img/portfolio_03.jpg",
+    "tags": ["portfolio"],
+    "pack": "solid"
+  },{
+    "type": "image",
+    "src": "%block_url%/assets/img/portfolio_04.jpg",
+    "tags": ["portfolio"],
+    "pack": "solid"
+  },{
+    "type": "image",
+    "src": "%block_url%/assets/img/portfolio_05.jpg",
+    "tags": ["portfolio"],
+    "pack": "solid"
+  },{
+    "type": "image",
+    "src": "%block_url%/assets/img/portfolio_06.jpg",
+    "tags": ["portfolio"],
+    "pack": "solid"
+  },{
+    "type": "image",
+    "src": "%block_url%/assets/img/portfolio_07.jpg",
+    "tags": ["portfolio"],
+    "pack": "solid"
+  },{
+    "type": "image",
+    "src": "%block_url%/assets/img/portfolio_08.jpg",
+    "tags": ["portfolio"],
+    "pack": "solid"
+  },{
+    "type": "image",
+    "src": "%block_url%/assets/img/portfolio_09.jpg",
+    "tags": ["portfolio"],
+    "pack": "solid"
+  },{
+    "type": "image",
+    "src": "%block_url%/assets/img/portfolio_10.jpg",
+    "tags": ["portfolio"],
+    "pack": "solid"
+  },{
+    "type": "image",
+    "src": "%block_url%/assets/img/t-back.jpg",
+    "tags": ["city"],
+    "pack": "solid"
   }]
 }

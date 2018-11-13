@@ -1,0 +1,39 @@
+{
+  "groups": "testimonial",
+  "template": "template.hbs",
+  "settings": [{
+    "name": "block_id",
+    "label": "Block's id",
+    "type": "text"
+  },{
+    "name": "bg_image",
+    "label": "Background image",
+    "type": "image",
+    "tags" : ["city"]
+  },{
+    "name": "icon",
+    "label": "Icon",
+    "type": "icon"
+  },{
+    "name": "text",
+    "label": "Text",
+    "type": "textarea"
+  },{
+    "name": "author",
+    "label": "Author",
+    "type": "text"
+  },{
+    "name": "position",
+    "label": "Position",
+    "type": "text"
+  }],
+  "defaults": {
+    "block_id": "twrap",
+    "bg_image": "%block_url(media)%/assets/img/t-back.jpg",
+    "icon": "fa fa-comment-o",
+    "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>",
+    "author": "Marcel Newman",
+    "position": "WEB DESIGNER - BLACKTIE.CO",
+    "image": "%block_url%/assets/img/browser.png"
+  }
+}

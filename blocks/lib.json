@@ -25,5 +25,8 @@
   },{
     "name": "media",
     "url": "/media"
+  },{
+    "name": "testimonial",
+    "url": "/testimonial"
   }]
 }
