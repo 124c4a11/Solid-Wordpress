@@ -8,6 +8,10 @@
     "id": "iconbox",
     "label": "Iconbox",
     "position": 1
+  },{
+    "id": "portfolio",
+    "label": "Portfolio",
+    "position": 2
   }],
   "blocks": [{
     "name": "hero",
@@ -15,5 +19,11 @@
   },{
     "name": "iconbox",
     "url": "/iconbox"
+  },{
+    "name": "portfolio",
+    "url": "/portfolio"
+  },{
+    "name": "media",
+    "url": "/media"
   }]
 }

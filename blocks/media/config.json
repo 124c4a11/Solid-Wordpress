@@ -1,0 +1,8 @@
+{
+  "assets": [{
+    "type": "image",
+    "src": "%block_url%/assets/img/portfolio_01.jpg",
+    "tags": ["portfolio"],
+    "pack": "solid"
+  }]
+}
