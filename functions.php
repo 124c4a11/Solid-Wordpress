@@ -174,6 +174,39 @@ function solid_scripts() {
 add_action( 'wp_enqueue_scripts', 'solid_scripts' );
 
 
+if ( ! function_exists( 'solid_blog_load' ) ) {
+  function solid_blog_load() {
+    $args = array(
+      'post_type' => 'post',
+      'post_status' => 'publish',
+      'orderby' => 'date',
+      'posts_per_page' => esc_attr($_POST['per_page']),
+      'order' => 'ASC'
+    );
+    $posts = get_posts($args);
+    $data = array();
+
+    $i = 0;
+    foreach($posts as $post) {
+      setup_post_data($post);
+
+      $data[$i] = array();
+      $data[$i]['post_title'] = $post->$post_title;
+      $data[$i]['post_url'] = get_permalink($pos->ID);
+
+      $i++;
+    }
+
+    wp_reset_postdata();
+    wp_send_json_success($data);
+
+    wp_die();
+  }
+}
+add_action('wp_ajax_solid_blog_load', 'solid_blog_load');
+add_action('wp_ajax_nopriv_solid_blog_load', 'solid_blog_load');
+
+
 /**
  * Implement the Custom Header feature.
  */

@@ -12,6 +12,14 @@
     "id": "portfolio",
     "label": "Portfolio",
     "position": 2
+  },{
+    "id": "about",
+    "label": "About",
+    "position": 3
+  },{
+    "id": "testimonial",
+    "label": "Testimonial",
+    "position": 4
   }],
   "blocks": [{
     "name": "hero",
@@ -25,6 +33,9 @@
   },{
     "name": "media",
     "url": "/media"
+  },{
+    "name": "about",
+    "url": "about"
   },{
     "name": "testimonial",
     "url": "/testimonial"
