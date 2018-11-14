@@ -1,0 +1,34 @@
+{
+  "groups": "brands",
+  "template": "template.hbs",
+  "settings": [{
+    "name": "section_title",
+    "label": "Section title",
+    "type": "text"
+  },{
+    "name": "brands",
+    "label": "Brands",
+    "type": "accordion",
+    "settings": [{
+      "name": "image",
+      "label": "Image",
+      "type": "image"
+    }]
+  }],
+  "defaults": {
+    "section_title": "OUR CLIENTS",
+    "brands": [{
+      "image": "%block_url(media)%/assets/img/clients/client01.png",
+      "order": 1
+    },{
+      "image": "%block_url(media)%/assets/img/clients/client02.png",
+      "order": 2
+    },{
+      "image": "%block_url(media)%/assets/img/clients/client03.png",
+      "order": 3
+    },{
+      "image": "%block_url(media)%/assets/img/clients/client04.png",
+      "order": 4
+    }]
+  }
+}

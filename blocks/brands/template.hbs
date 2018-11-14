@@ -1,0 +1,12 @@
+<div id="cwrap">
+  <div class="container">
+    <div class="row centered">
+      <h3>{{section_title}}</h3>
+      {{#each_with_sort brands "order"}}
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <img src="{{image}}" class="img-responsive">
+        </div>
+      {{/each_with_sort}}
+    </div>
+  </div>
+</div>

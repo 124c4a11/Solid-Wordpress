@@ -20,6 +20,10 @@
     "id": "testimonial",
     "label": "Testimonial",
     "position": 4
+  },{
+    "id": "brands",
+    "label": "Brands",
+    "position": 5
   }],
   "blocks": [{
     "name": "hero",
@@ -39,5 +43,8 @@
   },{
     "name": "testimonial",
     "url": "/testimonial"
+  },{
+    "name": "brands",
+    "url": "/brands"
   }]
 }

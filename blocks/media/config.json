@@ -54,5 +54,25 @@
     "src": "%block_url%/assets/img/t-back.jpg",
     "tags": ["city"],
     "pack": "solid"
+  },{
+    "type": "image",
+    "src": "%block_url%/assets/img/clients/client01.png",
+    "tags": ["client"],
+    "pack": "solid"
+  },{
+    "type": "image",
+    "src": "%block_url%/assets/img/clients/client02.png",
+    "tags": ["client"],
+    "pack": "solid"
+  },{
+    "type": "image",
+    "src": "%block_url%/assets/img/clients/client03.png",
+    "tags": ["client"],
+    "pack": "solid"
+  },{
+    "type": "image",
+    "src": "%block_url%/assets/img/clients/client04.png",
+    "tags": ["client"],
+    "pack": "solid"
   }]
 }
