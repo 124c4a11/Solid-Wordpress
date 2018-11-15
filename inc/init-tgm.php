@@ -75,6 +75,16 @@ function solid_register_required_plugins() {
 			'slug'               => 'qoob', // The plugin slug (typically the folder name).
 			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 		),
+		array(
+			'name'               => 'Contact Form 7', // The plugin name.
+			'slug'               => 'contact-form-7', // The plugin slug (typically the folder name).
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+		),
+		array(
+			'name'               => 'Advanced Custom Fields', // The plugin name.
+			'slug'               => 'advanced-custom-fields', // The plugin slug (typically the folder name).
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+		),
 	);
 
 	/*

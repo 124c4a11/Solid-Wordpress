@@ -15,6 +15,16 @@
 get_header();
 ?>
 
+	<div id="blue">
+		<div class="container">
+			<div class="row">
+				<?php the_title('<h3>', '</h3>'); ?>
+			</div>
+		</div>
+	</div>
+
+	<div class="container mtb">
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -35,6 +45,4 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer(); ?>

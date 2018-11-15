@@ -44,13 +44,3 @@
 			</div><!--/.nav-collapse -->
 		</div>
 	</div>
-
-	<div id="blue">
-	    <div class="container">
-			<div class="row">
-				<h3><?php esc_html_e('Blog List.', 'solid'); ?></h3>
-			</div><!-- /row -->
-	    </div> <!-- /container -->
-	</div><!-- /blue -->
-
-	<div class="container mtb">

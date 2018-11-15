@@ -243,6 +243,11 @@ require get_template_directory() . '/inc/init-tgm.php';
 require get_template_directory() . '/inc/solid-options.php';
 
 /**
+ * ACF.
+ */
+require get_template_directory() . '/inc/acf-options.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
