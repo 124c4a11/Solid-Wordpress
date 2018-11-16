@@ -14,6 +14,8 @@ get_header();
 		</div>
 	</div>
 
+	<div id="map"></div>
+
 	<div class="container mtb">
 		<div class="row">
 			<div class="col-lg-8">

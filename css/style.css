@@ -184,6 +184,11 @@ a:focus {
 	font-weight: normal !important;
 }
 
+#map {
+	height: 400px;
+	margin-top: -60px;
+}
+
 .mtb {
 	margin-top: 80px;
 	margin-bottom: 80px;

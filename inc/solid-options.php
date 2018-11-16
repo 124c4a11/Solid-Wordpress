@@ -151,3 +151,33 @@
             ),
         ),
     ) );
+
+    Redux::setSection( $opt_name, array(
+        'title'            => __( 'Map', 'redux-framework-demo' ),
+        'id'               => 'map',
+        'desc'             => __( 'Map settings', 'redux-framework-demo' ),
+        'customizer_width' => '400px',
+        'icon'             => 'el  el-map-marker',
+        'fields'           => array(
+            array(
+                'id'       => 'map-api-key',
+                'type'     => 'text',
+                'title'    => __('Api key', 'redux-framework-demo')
+            ),
+            array(
+                'id'       => 'map-lat',
+                'type'     => 'text',
+                'title'    => __('Lat', 'redux-framework-demo')
+            ),
+            array(
+                'id'       => 'map-lng',
+                'type'     => 'text',
+                'title'    => __('Lng', 'redux-framework-demo')
+            ),
+            array(
+                'id'       => 'map-zoom',
+                'type'     => 'text',
+                'title'    => __('Zoom', 'redux-framework-demo')
+            ),
+        ),
+    ) );
