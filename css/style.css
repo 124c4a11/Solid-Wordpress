@@ -468,3 +468,17 @@ csmall2 {
 	padding-right: 15px;
 	font-size: 18px;
 }
+
+.posted-on,
+.posted-on a {
+	font-size: 12px;
+	color: #b3b3b3;
+}
+
+.byline,
+.byline a,
+.byline + .comments-link,
+.byline + .comments-link a {
+	font-size: 12px;
+	color: #f39c12;
+}

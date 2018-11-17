@@ -36,6 +36,8 @@ if ( ! function_exists( 'solid_setup' ) ) :
      */
     add_theme_support( 'title-tag' );
 
+    add_image_size( 'blog-list', 850, 400, true );
+
     /*
      * Enable support for Post Thumbnails on posts and pages.
      *

@@ -11,11 +11,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+		<p><?php solid_post_thumbnail('blog-list'); ?></p>
+
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h1 class="ctitle">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h3 class="ctitle"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) :
@@ -29,14 +31,13 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php solid_post_thumbnail(); ?>
 
-	<div class="entry-content">
+	<div>
 		<?php
 		the_content( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'solid' ),
+				__( '[Read More]', 'solid' ),
 				array(
 					'span' => array(
 						'class' => array(),
@@ -52,8 +53,6 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php solid_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	<div class="hline"></div>
+	<div class="spacing"></div>
 </article><!-- #post-<?php the_ID(); ?> -->
