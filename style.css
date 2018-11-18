@@ -483,8 +483,22 @@ a:hover, a:active {
 	/* Make sure select elements fit in widgets. */
 }
 
+.widget ul {
+	margin: 0;
+	list-style: none;
+}
+
+.widget ul li {
+	margin: 10px 0;
+}
+
 .widget select {
 	max-width: 100%;
+}
+
+.list-cat-arrow {
+	margin-right: 5px;
+	color: #428bca;
 }
 
 /*--------------------------------------------------------------

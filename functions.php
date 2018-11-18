@@ -114,9 +114,9 @@ function solid_widgets_init() {
     'id'            => 'sidebar-1',
     'description'   => esc_html__( 'Add widgets here.', 'solid' ),
     'before_widget' => '<section id="%1$s" class="widget %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h2 class="widget-title">',
-    'after_title'   => '</h2>',
+    'after_widget'  => '<div class="spacing"></div></section>',
+    'before_title'  => '<h4 class="widget-title">',
+    'after_title'   => '</h4><div class="hline"></div>',
   ) );
 
   register_sidebar( array(
@@ -130,6 +130,16 @@ function solid_widgets_init() {
   ) );
 }
 add_action( 'widgets_init', 'solid_widgets_init' );
+
+
+function solid_categories($html, $args) {
+  $html = str_replace('</a> (', '</a><span class="badge badge-theme pull-right">', $html);
+  $html = str_replace(')', '</span>', $html);
+  $html = str_replace('<a href', '<i class="list-cat-arrow fa fa-angle-right"></i><a href', $html);
+
+  return $html;
+}
+add_filter('wp_list_categories', 'solid_categories', 11, 2);
 
 
 /**
