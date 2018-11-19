@@ -142,6 +142,30 @@ function solid_categories($html, $args) {
 add_filter('wp_list_categories', 'solid_categories', 11, 2);
 
 
+function solid_tag_cloud_widget($args) {
+  $args['smallest'] = 14;
+  $args['largest'] = 14;
+  $args['unit'] = 'px';
+
+  return $args;
+}
+add_filter('widget_tag_cloud_args', 'solid_tag_cloud_widget');
+
+
+function solid_tag_cloud_link_class($tags_data) {
+  $filtered_tags_data = array();
+
+  foreach ($tags_data as $tag_data) {
+    $tag_data['class'] = $tag_data['class'] . ' btn btn-theme';
+
+    $filtered_tags_data[] = $tag_data;
+  }
+
+  return $filtered_tags_data;
+}
+add_filter('wp_generate_tag_cloud_data', 'solid_tag_cloud_link_class');
+
+
 /**
  * Init qoob libs
  */
