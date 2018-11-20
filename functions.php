@@ -300,6 +300,11 @@ require get_template_directory() . '/inc/solid-options.php';
 require get_template_directory() . '/inc/acf-options.php';
 
 /**
+ * Solid Widgets.
+ */
+require get_template_directory() . '/inc/solid-widgets.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
